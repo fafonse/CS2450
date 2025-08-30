@@ -2,7 +2,7 @@ from random import shuffle
 
 ages = list(range(16, 30))
 shuffle(ages)
-ages = 
+
 def main():
     print("Hello! I'm the all knowing BITLORD, and I'll try to guess your age!")
     name = input("What's your name yo? ")
