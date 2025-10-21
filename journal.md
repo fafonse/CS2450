@@ -15,3 +15,7 @@
 ## 10/8/2025
 
     I got my midterm today. I didn't study for it last night, so I only have the hour before class to study. It scares me a bit, just because I REALLY want a good grade. I don't think I'll get one, but I need to study very hard before the class anyways. I was doing the homework last night, and it was extremely maddening how fast the questions devolved into uncomprehensible answers that use techniques that are impossible to understand.
+
+## 10/21/2025
+
+    Missed a week ugggghhh. I had the most horrible two shifts ever this weekend, but now im past it, so I shouldn't worry bout it. I need money. I'm mostly caught up now, just need to work on my web design class projects, which are like 1-2 weeks overdue now. shoot. If I do a journal sunday can that count for this week instead of this one?
