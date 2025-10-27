@@ -19,3 +19,6 @@
 ## 10/21/2025
 
     Missed a week ugggghhh. I had the most horrible two shifts ever this weekend, but now im past it, so I shouldn't worry bout it. I need money. I'm mostly caught up now, just need to work on my web design class projects, which are like 1-2 weeks overdue now. shoot. If I do a journal sunday can that count for this week instead of this one?
+
+## 10/26/2025
+    Told you I'd be back. I feel a lot better about myself now. I know that the outlook is really bleak, but now that I have money issues off my back, I'm ready to face school head on. I've been putting off assignments wayy too much this semester, and this past week I've started doing at least *part* of an assignment every day. At least a substantial chunk. With work, I really can't rely on smooth coasting with last minute work, and a lot of assignments I need to track myself. So time to pull my bootstraps or something.
