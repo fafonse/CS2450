@@ -46,6 +46,27 @@ def determine_insurance_plan():
         print("Sorry, you do not qualify for any plans.")
 
     if marital_status == "single":
+        marital_status = "i"  # individual plans
+    else:
+        if has_children == "yes":
+            marital_status = "f"  # family plans
+        else:
+            marital_status == ""
+
+    income_group = 1  # 1 = low, 2 = med, 3 = high
+
+    if (
+        income < 35000 and marital_status != "f"
+    ) or (  # leaving this for now as code is bugged
+        income < 65000 and marital_status == "f"
+    ):
+        income_group = 1  # brokie tier
+    if income < 50000 and marital_status != "f":
+        income_group = 2  # robux tier
+    else:
+        income_group = 3  # sigma tier
+
+    if marital_status == "single":
         if income < 35000:
             if health_level == "no":
                 print_results("Low Income Plan", "High-Deductible B", plans)
@@ -54,47 +75,33 @@ def determine_insurance_plan():
         else:
             if health_level == "no":
                 if income > 50000:
-                    print("\nRecommended Plan: High-Deductible B (Individual)")
-                    print_plan_details("High-Deductible B", plans)
-                    print("\nAlternate Plan: High-Deductible A (Individual)")
-                    print_plan_details("High-Deductible A", plans)
+                    print_results("High-Deductible B", "High-Deductible A", family="i")
                 else:
-                    print("\nRecommended Plan: High-Deductible A (Individual)")
-                    print_plan_details("High-Deductible A", plans)
-                    print("\nAlternate Plan: Regular Plan A (Individual)")
-                    print_plan_details("Regular Plan A", plans)
+                    print_results("High-Deductible A", "Regular Plan A", plans="i")
             else:
                 if income > 50000:
-                    print("\nRecommended Plan: Regular Plan A (Individual)")
-                    print_plan_details("Regular Plan A", plans)
-                    print("\nAlternate Plan: Regular Plan B (Individual)")
-                    print_plan_details("Regular Plan B", plans)
+                    print_results("Regular Plan A", "Regular Plan B", family="i")
                 else:
-                    print("\nRecommended Plan: Regular Plan B (Individual)")
-                    print_plan_details("Regular Plan B", plans)
-                    print("\nAlternate Plan: High-Deductible A (Individual)")
-                    print_plan_details("High-Deductible A", plans)
+                    print_results("Regular Plan B", "High-Deductible A", family="i")
     else:  # Married
         if has_children == "yes":
             if income < 65000:
                 if health_level == "no":
                     print_results(
-                        "Low Income Plan", "High-Deductible A", plans, family=True
+                        "Low Income Plan", "High-Deductible A", plans, family="f"
                     )
                 else:
                     print_results(
-                        "Low Income Plan", "Regular Plan A", plans, family=True
+                        "Low Income Plan", "Regular Plan A", plans, family="f"
                     )
             else:
                 if health_level == "no":
                     if income > 50000:
                         print_results(
-                            "High-Deductible A", "High-Deductible B", plans, family=True
+                            "High-Deductible A", "High-Deductible B", plans, family="f"
                         )
                     else:
-                        print_results(
-                            "High-Deductible B", "Regular Plan A", family=True
-                        )
+                        print_results("High-Deductible B", "Regular Plan A", family="f")
                 else:
                     if income > 50000:
                         print_results(
@@ -126,9 +133,11 @@ def print_plan_details(plan_name, plans):
     print(f"  Cost: {plans[plan_name]['cost']}")
 
 
-def print_results(recommended, alternate, plans, family="i"):
+def print_results(recommended, alternate, plans, family=""):
     if family == "f":
         family = " (Family)"
+    if family == "i":
+        family = " (Individual)"
     else:
         family = ""
     print("\nRecommended Plan: ", recommended, family)

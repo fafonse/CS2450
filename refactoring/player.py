@@ -12,11 +12,18 @@ class CharacterBase:
 
 
 # Child class that inherits unnecessarily
-class Player(CharacterBase):
+class Player:
     def __init__(self, x, y, speed, health, score):
-        super().__init__(x, y, speed)
+        self.x = x
+        self.y = y
+        self.speed = speed
         self.health = health
         self.score = score
+
+    def move(self, dx, dy):
+        self.x += dx * self.speed
+        self.y += dy * self.speed
+        return f"Player moved to position ({self.x}, {self.y})."
 
     def jump(self, velocity):
         return f"Player jumps with velocity {velocity}."
