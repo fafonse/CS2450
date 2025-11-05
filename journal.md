@@ -25,3 +25,6 @@
 
 ## 11/2/2025
     Happy Halloween I guess. I dressed as a clown this year, it was alright. I gotta work on a math project today, if I don't do it my grade is probably a definite F for the semester. I gotta work more on my team project this week, I've barely touched the repo. I got a new watch after my birthday last month, but I regret it now. I could've spent those dollars on food and tuiton. I don't need another watch.
+
+## 11/5/2025
+I know it's been like 3 days since the last one, but it's a new week or something. My grades still suck. I got that math project turned in sunday, but the teacher made it due at 11pm instead of 12am. So as soon as I got back from work I had only an hour and a half to get it done. If I had 10 more minutes I could have finished it. It's alright where it stands right now I suppose. I want to work on password hashing for the database for the youface project this week (if I have the time). No one seems to care about it, but It's definitely way more feasible that DIRECT MESSAGING (why did we add this issue bruh).
