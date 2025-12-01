@@ -35,3 +35,7 @@
 
 ## 11/19/2025
     I think I got this. I talked to my math teacher today, and he said he'll let me redo an assignment from october for half points, which is amazing (I had a zero before). However, I also don't have a lot of time to do anything this week. I got my website project, RSA encryption, and this all due by end of the week. I also have work thursday till Sunday. I just have to be really productive this week I guess.
+
+## 12/1/2025
+    Yeah I missed a week. Thanksgiving break though.
+    So much crap is due this last week its pissing me off lowkey. Like this class requires that we have our final presentation this week (and we have a final). I also got to turn in my final website, final math project, and my final oceonography fact sheet. That is major buns. Like I've had like zero socializing the past week man, and that was super depressing. But, I just got to make it to next week, and most of the stress should be over with by then.
